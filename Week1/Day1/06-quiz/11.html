@@ -1,15 +1,20 @@
-<html>
+<!-- <html>
     <body>
         <script>
-            let angka = 0;
-            let acak = 0;
-            angka = Number(prompt("enter price : "));
+           let acak = Math.floor(Math.random()*20)
 
-             while(acak !== angka){
-                 angka += n;
-                 acak = Math.floor(Math.random() * 21);
-             }
-             alert(angka);
+           let mengisi = Number(prompt("Enter Number (0-20) : "))
+           let jikaBenar = mengisi == acak
+           while(!jikabenar){
+           if(mengisi> acak){
+               alert("angka terlalu besar")
+           }else{
+               alert("angka terlalu kecil")
+           }        
+           mengisi = Number(prompt("Enter Number (0-20) :"))
+           jikaBenar = mengisi == acak
+        }
+        alert("anda benar angkanya adalah "+acak)
         </script>
     </body>
-</html>
+</html> -->

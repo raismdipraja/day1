@@ -1,8 +1,16 @@
 function deretSatu(k){
-   angka = 1
-   for (let i = 1; i < k.length; i*10) {
-       return k[i];
-       
+   let deret = "";
+   let derets = "";
+   
+   let n = 1;
+
+   for (let i = 1; i <= k; i++) {
+       for(let j = 0; j < i; j++ ){
+           derets+= n
+       }
+       deret += derets+","
+       derets = "";
    }
+   return deret
 }
-console.log(deretSatu(5));
+console.log(deretSatu(7));

@@ -1,9 +1,10 @@
 function deretRam(k){
-    
-    let deret = 1;
-    for (let i = 0; i < k.length; i+2) {
-        
-        return deret * i;
+    hasil = 0;
+    deret = 0,5;
+    for (let i = 0; i < k.length; i++) {
+        hasil = deret * 2
     }
+    return hasil
+    
 } 
 console.log(deretRam(7)); 

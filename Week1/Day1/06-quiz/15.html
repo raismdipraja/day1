@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <script>
+            let monthbudget = 0;
+            let cost = 0;
+            let input = Number(prompt("Enter Budget :"))
+            let budget = input;
+            while(input !==0){
+                input = Number(prompt("Enter cost : (0 to quit)"))
+                cost+= input
+            }
+            let sisa = budget - cost
+            alert("sisa uang anda adalah" +sisa+" dan pengeluaran kamu adalah "+cost) 
+
+        </script>
+    </body>
+</html>
