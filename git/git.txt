@@ -1,0 +1,14 @@
+
+
+
+//create new branch
+git checkout -b day01
+
+//switch branch
+git checkout main
+
+//push nama branch
+git push -u origin namabranch
+
+//melihat ada di brach mana
+git branch
