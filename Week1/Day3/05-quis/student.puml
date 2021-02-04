@@ -1,0 +1,26 @@
+@startuml classdiagram-bootcamp
+
+class student {
+    +fullname: String
+    +city: String
+    +education: String
+    +grade: String
+    +type: String
+    +bootcamp: String
+    +batch: String
+    +year: String
+    +education: String  
+}
+
+class beasiswa extends student{
+    +insentif: String
+
+}
+
+class reguler extends student{
+    +netPrice: String
+
+}
+
+@enduml
+
