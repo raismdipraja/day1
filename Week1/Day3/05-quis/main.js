@@ -1,5 +1,5 @@
 import Siswa,{Beasiswa, Reguler} from './siswa.js';
-import {jumlahSiswa,jumlahInsentif, jumlahNetPrize, jumlahNodeJs, jumlahGolang, jumlahPhyton} from './apiSiswa.js';
+import {jumlahSiswa,jumlahInsentif, jumlahNetPrize, jumlahGolang, jumlahPhyton, toBootcamp} from './apiSiswa.js';
 
 function main() {
 
@@ -23,15 +23,24 @@ function main() {
     const regulermeita = new Reguler("Meita","Jakarta","S1","3.00","Reguler","Phyton","3","2021","4",7000000);
     console.log(regulermeita);
 
+    //hitung bootcamp
+    const nodeJs = toBootcamp("NodeJs", beasiswaasep,beasiswaami,beasiswabudi,beasiswacindi,beasiswadedy,regulerdesta,regulersinta,regulermeita);
+    const Golang = toBootcamp("Golang", beasiswaasep,beasiswaami,beasiswabudi,beasiswacindi,beasiswadedy,regulerdesta,regulersinta,regulermeita);
+    const Phyton = toBootcamp("Phyton", beasiswaasep,beasiswaami,beasiswabudi,beasiswacindi,beasiswadedy,regulerdesta,regulersinta,regulermeita);
+
+    const Java = toBootcamp("Java", beasiswaasep,beasiswaami,beasiswabudi,beasiswacindi,beasiswadedy,regulerdesta,regulersinta,regulermeita);
+
 
     console.log("Total Siswa :"+jumlahSiswa());
     console.log(`Total Beasiswa : ${Beasiswa.totalBeasiswa}`);
     console.log(`Total Reguler : ${Reguler.totalReguler}`);
     console.log("jumlah Insentif : Rp."+jumlahInsentif());
     console.log("jumlah NetPrize : Rp."+jumlahNetPrize());
-    console.log("Jumlah Node Js :"+jumlahNodeJs());
-    console.log("Jumlah Golang :"+jumlahGolang());
-    console.log("Jumlah Phyton :"+jumlahPhyton());
+    console.log("Jumlah Node Js :"+nodeJs);
+    console.log("Jumlah Golang :"+Golang);
+    console.log("Jumlah Phyton :"+Phyton);
+    console.log("Jumlah Java :"+Java);
+
 
 
 

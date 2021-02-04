@@ -3,24 +3,17 @@ export default class Siswa{
     static jumlahNodeJs =0;
     static jumlahGolang =0;
     static jumlahPhyton =0;
-    constructor(fullname,city,education,grade,type,bootcamp,batch,year,skillPoint){
+    constructor(fullname,city,education,grade,type,bootcamP,batch,year,skillPoint){
         this.fullname= fullname;
         this.city= city;
         this.education = education;
         this.grade= grade;
         this.type= type;
-        this.bootcamp=bootcamp;
+        this.bootcamP=bootcamP;
         this.batch= batch;
         this.year=year;
         this.skillPoint=skillPoint;
         Siswa.jumlahSiswa++;
-        if(bootcamp == "NodeJs"){
-            Siswa.jumlahNodeJs++;
-        }else if(bootcamp == "Golang"){
-            Siswa.jumlahGolang++;
-        }else if(bootcamp == "Phyton"){
-            Siswa.jumlahPhyton++
-        }
         
     }
 } 

@@ -14,9 +14,7 @@ export const jumlahNetPrize=()=>{
     return  Reguler.jumlahNetPrize;
 }
 
-export const jumlahNodeJs=()=>{
-    return  Siswa.jumlahNodeJs;
-}
+
 
 export const jumlahGolang=()=>{
     return  Siswa.jumlahGolang;
@@ -25,4 +23,13 @@ export const jumlahGolang=()=>{
 export const jumlahPhyton=()=>{
     return  Siswa.jumlahPhyton;
 }
-
+export const toBootcamp =(value,...list)=>{
+    let count = 0;
+    for(const i of list){
+        //  regulerasep.       NodeJs
+        if (i.bootcamP ===value){
+            count++
+        }
+    }
+    return count;
+}
