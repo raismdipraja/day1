@@ -26,7 +26,8 @@ export const jumlahPhyton=()=>{
 export const toBootcamp =(value,...list)=>{
     let count = 0;
     for(const i of list){
-        //  regulerasep.       NodeJs
+        // bootcamP diambil dari siswa.js di parameter bootcamP
+        //  regulerasep.    NodeJs
         if (i.bootcamP ===value){
             count++
         }
